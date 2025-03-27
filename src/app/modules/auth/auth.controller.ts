@@ -15,11 +15,7 @@ const register = catchAsync(async (req, res) => {
     statusCode: StatusCodes.CREATED,
     success: true,
     message: 'User registered successfully',
-    data: {
-      _id: result._id,
-      name: result.name,
-      email: result.email,
-    },
+    data: result
   });
 });
 

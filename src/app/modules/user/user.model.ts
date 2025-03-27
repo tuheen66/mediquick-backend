@@ -29,6 +29,9 @@ const userSchema = new Schema<TUser>(
     address: {
       type: String,
     },
+    image: {
+      type: String,
+    },
     role: {
       type: String,
       enum: ['customer', 'admin'],
